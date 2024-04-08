@@ -1,4 +1,3 @@
-
 const navBtnEl = document.querySelector(".btn-nav-mobile");
 const headerEl = document.querySelector(".header");
 
@@ -6,6 +5,8 @@ navBtnEl.addEventListener("click", function () {
   headerEl.classList.toggle("open-nav");
 });
 
+// for scrolling animation
+const alllinks = document.querySelectorAll("a:link");
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
