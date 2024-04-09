@@ -339,7 +339,6 @@ nav a:link:hover {
 
   .header {
     padding: 3.5rem 2rem 1.5rem;
-    
   }
 
   .icon-mobile-nav {
@@ -376,7 +375,7 @@ nav a:link:hover {
 
 /* TRUSTED COMPANIES */
 
-.companies {
+.section-companies {
   width: 100%;
   height: auto;
   padding: 4.5rem 12rem;
@@ -489,7 +488,7 @@ nav a:link:hover {
 
 /* HOW IT WORKS */
 
-.how-it-works {
+.section-how {
   padding: 4rem 7rem 0;
   width: 100%;
   height: auto;
@@ -663,7 +662,7 @@ nav a:link:hover {
 
 /* OUR CUSTOMERS SECTION */
 
-.customer-stories {
+.customer-customer-stories {
   padding: 4.5rem 7rem;
   width: 100%;
   height: auto;
@@ -907,7 +906,7 @@ nav a:link:hover {
 
 /* LOCATION SECTION */
 
-.location-container {
+.section-location {
   padding: 3rem 12rem 2rem 7rem;
   width: 100%;
   height: auto;

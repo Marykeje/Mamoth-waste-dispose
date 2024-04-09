@@ -1,3 +1,5 @@
+// for mobile nav
+
 const navBtnEl = document.querySelector(".btn-nav-mobile");
 const headerEl = document.querySelector(".header");
 
@@ -5,8 +7,8 @@ navBtnEl.addEventListener("click", function () {
   headerEl.classList.toggle("open-nav");
 });
 
-// for scrolling animation
-const alllinks = document.querySelectorAll("a:link");
+// for smooth scrolling animation
+const allLinks = document.querySelectorAll("a:link");
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
@@ -19,6 +21,12 @@ allLinks.forEach(function (link) {
         top: 0,
         behaviour: "smooth",
       });
+
+    // scroll to other links
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
   });
 });
 
