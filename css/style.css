@@ -39,7 +39,6 @@ body {
   background-color: rgba(241, 255, 229, 0.819);
   z-index: 9999;
   padding: 4rem 7rem;
-  /* padding: 0 4.8rem; */
   height: 4.5rem;
 }
 
@@ -207,9 +206,6 @@ nav a:link:active {
   .main-header {
     padding: 4.5rem 6rem 1rem;
   }
-  .header {
-    /* width: 90%; */
-  }
   .header-img {
     width: 60%;
   }
@@ -364,7 +360,6 @@ nav a:link:active {
   }
   .sustainable {
     font-size: 30px;
-    /* line-height: 1.2; */
   }
   .head-text {
     font-size: 26px;
@@ -391,7 +386,6 @@ nav a:link:active {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* gap: 5rem; */
   flex-wrap: wrap;
 
   width: 100%;
@@ -473,7 +467,6 @@ nav a:link:active {
   }
 }
 
-/* 314 */
 @media screen and (max-width: 370px) {
   .section-companies {
     bottom: -65px;
@@ -693,7 +686,6 @@ nav a:link:active {
 .stories-card {
   width: 30%;
   height: auto;
-  /* display: flex; */
   align-items: flex-end;
   flex-direction: column;
 
@@ -717,7 +709,6 @@ nav a:link:active {
   font-size: 18px;
   font-weight: 300;
   color: #626262;
-  /* padding-bottom: 6rem; */
   line-height: 1.6;
 }
 .story-name {
@@ -753,7 +744,6 @@ nav a:link:active {
   .story-teller {
     position: absolute;
     bottom: 93%;
-    /* left: 20px; */
   }
 }
 @media screen and (max-width: 1200px) {
@@ -860,9 +850,6 @@ nav a:link:active {
   }
 }
 @media screen and (max-width: 370px) {
-  .story-teller {
-    /* bottom: 91%; */
-  }
   .teller-img {
     width: 18%;
   }
@@ -984,16 +971,10 @@ nav a:link:active {
   .location-text {
     font-size: 16px;
   }
-  .location-body {
-    /* width: 40%; */
-  }
 }
 @media screen and (max-width: 985px) {
   .location-body {
     width: 50%;
-  }
-  .location {
-    /* width: 30%; */
   }
   .disposal {
     font-size: 30px;
@@ -1220,8 +1201,6 @@ nav a:link:active {
     padding: 10px 14px;
   }
 }
-
-/* 635 */
 
 @media screen and (max-width: 546px) {
   .footer {
