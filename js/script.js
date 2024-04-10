@@ -33,16 +33,24 @@ allLinks.forEach(function (link) {
 // Sticky Navigation
 const sectionHeroEl = document.querySelector(".waste-body");
 
-const obs = new IntersectionObserver(function (entries) {
-  const ent = entries[0];
-  console.log(ent);
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
 
-  if (ent.isIntersecting === false) {
-    document.body.classList.add("sticky");
-  }
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
 
-  if (ent.isIntersecting === true) {
-    document.body.classList.remove("sticky");
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // In the viewport. (null means the viewport)
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
   }
-});
+);
 obs.observe(sectionHeroEl);

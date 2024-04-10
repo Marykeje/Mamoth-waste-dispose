@@ -36,10 +36,11 @@ body {
   top: 0;
   left: 0;
 
-  background-color: rgba(241, 255, 229, 0.897);
+  background-color: rgba(241, 255, 229, 0.819);
   z-index: 9999;
-  padding: 4.5rem 7rem 1.5rem;
-  height: 3rem;
+  padding: 4rem 7rem;
+  /* padding: 0 4.8rem; */
+  height: 4.5rem;
 }
 
 .head-text {
@@ -71,8 +72,9 @@ nav a:link:last-child {
 a {
   color: #43a047;
 }
-nav a:link:hover {
-  color: #fff;
+nav a:link:hover,
+nav a:link:active {
+  color: rgba(54, 215, 62, 0.773);
 }
 .waste-body {
   width: 100%;
@@ -86,7 +88,7 @@ nav a:link:hover {
   color: #49cd88;
   line-height: 1.5;
   padding-bottom: 1.5rem;
-  padding-top: 2.5rem;
+  padding-top: 4rem;
   text-align: center;
 }
 .sustain {
@@ -125,9 +127,7 @@ nav a:link:hover {
 .google-btn:hover {
   background-color: #046c50;
 }
-.download-text {
-  /* font-size: 14px; */
-}
+
 .apple-btn {
   background-color: #0c513f;
   border-radius: 5px;
@@ -243,7 +243,7 @@ nav a:link:hover {
   }
 
   .header-menu {
-    background-color: rgba(255, 255, 255, 0.98);
+    background-color: rgba(255, 255, 255, 0.955);
 
     position: absolute;
     top: 0;
@@ -257,6 +257,8 @@ nav a:link:hover {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease-in;
+
+    padding: 0;
 
     opacity: 0;
     pointer-events: none;
@@ -303,7 +305,6 @@ nav a:link:hover {
 @media screen and (max-width: 633px) {
   .sustainable {
     font-size: 40px;
-    /* padding-top: 3rem; */
   }
   .download-text {
     font-size: 10px;
@@ -363,7 +364,7 @@ nav a:link:hover {
   }
   .sustainable {
     font-size: 30px;
-    line-height: 1.2;
+    /* line-height: 1.2; */
   }
   .head-text {
     font-size: 26px;
@@ -409,13 +410,13 @@ nav a:link:hover {
 }
 
 @media screen and (max-width: 1250px) {
-  .companies {
+  .section-companies {
     padding: 4rem 8rem;
     bottom: -9%;
   }
 }
 @media screen and (max-width: 1200px) {
-  .companies {
+  .section-companies {
     padding: 4rem 6rem;
 
     position: absolute;
@@ -429,14 +430,14 @@ nav a:link:hover {
   }
 }
 @media screen and (max-width: 970px) {
-  .companies {
+  .section-companies {
     position: absolute;
     bottom: -2px;
     padding: 3rem 5rem;
   }
 }
 @media screen and (max-width: 840px) {
-  .companies {
+  .section-companies {
     bottom: -68px;
   }
   .trusted-text {
@@ -444,7 +445,7 @@ nav a:link:hover {
   }
 }
 @media screen and (max-width: 740px) {
-  .companies {
+  .section-companies {
     padding: 2rem 3.5rem;
     bottom: -50px;
   }
@@ -454,7 +455,7 @@ nav a:link:hover {
 }
 
 @media screen and (max-width: 535px) {
-  .companies {
+  .section-companies {
     padding: 2rem 2rem;
   }
   .logo {
@@ -466,7 +467,7 @@ nav a:link:hover {
 }
 
 @media screen and (max-width: 430px) {
-  .companies {
+  .section-companies {
     bottom: -50px;
     padding: 1.5rem 2rem;
   }
@@ -474,8 +475,8 @@ nav a:link:hover {
 
 /* 314 */
 @media screen and (max-width: 370px) {
-  .companies {
-    bottom: -80px;
+  .section-companies {
+    bottom: -65px;
     padding: 1.5rem 1rem;
   }
   .logo {
@@ -563,12 +564,12 @@ nav a:link:hover {
     width: 100%;
     height: auto;
   }
-  .how-it-works {
+  .section-how {
     padding: 6rem 6rem 0;
   }
 }
 @media screen and (max-width: 1200px) {
-  .how-it-works {
+  .section-how {
     padding: 3rem 6rem 0;
   }
   .efficient {
@@ -593,7 +594,7 @@ nav a:link:hover {
     width: 45%;
     height: auto;
   }
-  .how-it-works {
+  .section-how {
     padding: 3.5rem 5rem 0;
   }
 }
@@ -605,7 +606,7 @@ nav a:link:hover {
     width: 100%;
     height: auto;
   }
-  .how-it-works {
+  .section-how {
     padding: 1.5rem 5rem 0;
   }
   .how-works {
@@ -614,7 +615,7 @@ nav a:link:hover {
   }
 }
 @media screen and (max-width: 841px) {
-  .how-it-works {
+  .section-how {
     padding: 4rem 4rem 0;
     font-size: 40px;
   }
@@ -623,7 +624,7 @@ nav a:link:hover {
   }
 }
 @media screen and (max-width: 535px) {
-  .how-it-works {
+  .section-how {
     padding: 4rem 3rem 0;
   }
   .efficient {
@@ -637,7 +638,7 @@ nav a:link:hover {
   .efficient-text {
     font-size: 12px;
   }
-  .how-it-works {
+  .section-how {
     padding: 4rem 2.5rem 0;
   }
   .how-works {
@@ -652,8 +653,8 @@ nav a:link:hover {
   .how-works {
     font-size: 28px;
   }
-  .how-it-works {
-    padding: 7rem 1.5rem 0;
+  .section-how {
+    padding: 5.5rem 1.5rem 0;
   }
   .efficient {
     font-size: 18px;
@@ -662,7 +663,7 @@ nav a:link:hover {
 
 /* OUR CUSTOMERS SECTION */
 
-.customer-customer-stories {
+.section-customer-stories {
   padding: 4.5rem 7rem;
   width: 100%;
   height: auto;
@@ -686,7 +687,6 @@ nav a:link:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* align-items: flex-end; */
   flex-wrap: wrap;
 }
 
@@ -717,7 +717,7 @@ nav a:link:hover {
   font-size: 18px;
   font-weight: 300;
   color: #626262;
-  padding-bottom: 6rem;
+  /* padding-bottom: 6rem; */
   line-height: 1.6;
 }
 .story-name {
@@ -727,15 +727,15 @@ nav a:link:hover {
   font-family: abeezee;
 }
 .names {
-  display: flex;
+  padding-top: 40%;
 }
 .story-teller {
   width: 100%;
   height: auto;
 
   position: absolute;
-  bottom: 88%;
-  left: 20px;
+  bottom: 90%;
+  left: 5%;
 }
 .teller-img {
   width: 15%;
@@ -752,12 +752,12 @@ nav a:link:hover {
   }
   .story-teller {
     position: absolute;
-    bottom: 90%;
-    left: 20px;
+    bottom: 93%;
+    /* left: 20px; */
   }
 }
 @media screen and (max-width: 1200px) {
-  .customer-stories {
+  .section-customer-stories {
     padding: 4.5rem 6rem;
   }
   .story-text {
@@ -768,7 +768,7 @@ nav a:link:hover {
   }
 }
 @media screen and (max-width: 970px) {
-  .customer-stories {
+  .section-customer-stories {
     padding: 4rem 6rem;
   }
   .stories-card {
@@ -778,47 +778,37 @@ nav a:link:hover {
     row-gap: 5rem;
   }
   .story-teller {
-    position: absolute;
-    bottom: 86%;
-    left: 25px;
+    bottom: 92%;
   }
   .stories {
     padding: 2.3rem 2rem 2rem;
   }
 }
-@media screen and (max-width: 880px) {
-  .story-teller {
-    bottom: 88%;
-  }
-}
 @media screen and (max-width: 800px) {
-  .story-teller {
-    bottom: 90%;
-  }
   .stories-card {
     width: 47%;
   }
   .our-customers {
     font-size: 36px;
   }
-  .customer-stories {
+  .section-customer-stories {
     padding: 4rem 5rem;
   }
 }
 @media screen and (max-width: 770px) {
-  .stories-container {
+  .section-stories-container {
     display: inline-block;
   }
   .stories-card {
     width: 100%;
-    height: auto;
-    padding-bottom: 6rem;
   }
+
   .story-teller {
-    bottom: 85%;
+    bottom: 90%;
   }
+
   .teller-img {
-    width: 14%;
+    width: 12%;
   }
   .stories {
     padding: 2.8rem 2.5rem 2rem;
@@ -833,17 +823,9 @@ nav a:link:hover {
     padding: 4rem 4rem 0rem;
   }
 }
-@media screen and (max-width: 640px) {
-  .story-teller {
-    bottom: 88%;
-  }
-}
 @media screen and (max-width: 585px) {
-  .story-teller {
-    bottom: 91%;
-  }
-  .customer-stories {
-    padding: 3rem 3rem 0rem;
+  .section-customer-stories {
+    padding: 3rem 3rem 5rem;
   }
   .our-customers {
     font-size: 30px;
@@ -859,8 +841,8 @@ nav a:link:hover {
   .our-customers {
     font-size: 28px;
   }
-  .stories-card {
-    padding-bottom: 4.5rem;
+  .story-teller {
+    bottom: 92%;
   }
 }
 @media screen and (max-width: 434px) {
@@ -870,8 +852,8 @@ nav a:link:hover {
   .stories-container {
     margin-top: 3rem;
   }
-  .customer-stories {
-    padding: 3rem 3rem 0rem;
+  .section-customer-stories {
+    padding: 3rem 3rem 4rem;
   }
   .story-text {
     font-size: 13px;
@@ -879,7 +861,7 @@ nav a:link:hover {
 }
 @media screen and (max-width: 370px) {
   .story-teller {
-    bottom: 91%;
+    /* bottom: 91%; */
   }
   .teller-img {
     width: 18%;
@@ -893,14 +875,14 @@ nav a:link:hover {
   .story-text {
     font-size: 13px;
   }
-  .customer-stories {
-    padding: 3rem 2rem 0rem;
+  .section-customer-stories {
+    padding: 3rem 2rem 4rem;
   }
   .story-name {
     font-size: 12px;
   }
   .stories-container {
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 }
 
@@ -968,7 +950,7 @@ nav a:link:hover {
 }
 
 @media screen and (max-width: 1250px) {
-  .location-container {
+  .section-location {
     padding: 3rem 10rem 2rem 7rem;
     width: 100%;
     height: auto;
@@ -984,7 +966,7 @@ nav a:link:hover {
   }
 }
 @media screen and (max-width: 1200px) {
-  .location-container {
+  .section-location {
     padding: 3rem 8rem 2rem 6rem;
   }
   .location-part {
@@ -1030,13 +1012,13 @@ nav a:link:hover {
   .location-part {
     padding: 3.5rem 3.5rem 0 3.5rem;
   }
-  .location-container {
+  .section-location {
     padding: 3rem 6rem 2rem 5rem;
   }
 }
 @media screen and (max-width: 770px) {
-  .location-container {
-    padding: 0rem 6rem 2rem 4rem;
+  .section-location {
+    padding: 0rem 5rem 2rem;
   }
   .location-body {
     width: 100%;
@@ -1052,7 +1034,7 @@ nav a:link:hover {
   }
 }
 @media screen and (max-width: 535px) {
-  .location-container {
+  .section-location {
     padding: 0rem 3rem 2rem;
   }
   .location-part {
@@ -1063,7 +1045,7 @@ nav a:link:hover {
   }
 }
 @media screen and (max-width: 435px) {
-  .location-container {
+  .section-location {
     padding: 0rem 2.5rem 2rem;
   }
 }
@@ -1082,7 +1064,7 @@ nav a:link:hover {
     padding: 8px 28px;
     font-size: 12px;
   }
-  .location-container {
+  .section-location {
     padding: 0rem 1.5rem 2rem;
   }
   .location-part {
@@ -1246,7 +1228,7 @@ nav a:link:hover {
     margin-top: 4rem;
   }
   .footer-body {
-    padding: 3.5rem 2rem 3rem;
+    padding: 3.5rem 2.5rem 3rem;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
   }
@@ -1265,9 +1247,6 @@ nav a:link:hover {
   .info {
     gap: 1rem;
   }
-  .social-download {
-    /* padding-top: 1rem; */
-  }
 
   .footer-heading {
     grid-column-start: 0;
@@ -1285,4 +1264,12 @@ nav a:link:hover {
   .social-icons {
     font-size: 1rem;
   }
+}
+
+.copyright {
+  font-size: 14px;
+  color: #005c30;
+  display: flex;
+  justify-content: center;
+  padding: 30px 40px 20px;
 }
