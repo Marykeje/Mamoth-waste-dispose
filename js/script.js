@@ -27,11 +27,15 @@ allLinks.forEach(function (link) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
+
+    // for closed nav mobile
+    if (link.classList.contains("nav-menu-link"))
+      headerEl.classList.toggle("open-nav");
   });
 });
 
 // Sticky Navigation
-const sectionHeroEl = document.querySelector(".waste-body");
+const wasteBodyEl = document.querySelector(".waste-body");
 
 const obs = new IntersectionObserver(
   function (entries) {
@@ -53,4 +57,4 @@ const obs = new IntersectionObserver(
     rootMargin: "-80px",
   }
 );
-obs.observe(sectionHeroEl);
+obs.observe(wasteBodyEl);

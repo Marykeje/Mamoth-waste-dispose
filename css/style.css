@@ -230,7 +230,7 @@ nav a:link:active {
 }
 
 @media screen and (max-width: 900px) {
-  /* FOR NAVIGATION NAV */
+  /* FOR NAVIGATION MOBILE */
 
   .btn-nav-mobile {
     display: block;
@@ -253,8 +253,6 @@ nav a:link:active {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease-in;
-
-    padding: 0;
 
     opacity: 0;
     pointer-events: none;
@@ -282,7 +280,7 @@ nav a:link:active {
 
 @media screen and (max-width: 850px) {
   .header {
-    padding: 4.5rem 5rem 1.5rem;
+    /* padding: 4rem 5rem 1.5rem; */
   }
 }
 
@@ -1180,7 +1178,7 @@ nav a:link:active {
 @media screen and (max-width: 700px) {
   .footer-body {
     padding: 4rem 4rem 3rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.4fr 1.4fr;
     row-gap: 2.5rem;
   }
 
@@ -1202,13 +1200,13 @@ nav a:link:active {
   }
 }
 
-@media screen and (max-width: 546px) {
+@media screen and (max-width: 590px) {
   .footer {
     margin-top: 4rem;
   }
   .footer-body {
     padding: 3.5rem 2.5rem 3rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.3fr 1.3fr;
     row-gap: 2rem;
   }
   .social-download {
